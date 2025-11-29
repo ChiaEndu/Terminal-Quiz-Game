@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "welcome to quiz  game"
 
 read -r -p " what is your name?:" player_name
