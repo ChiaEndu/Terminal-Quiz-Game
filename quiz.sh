@@ -38,7 +38,7 @@ ask_question() {
     echo "$B"
     echo "$C"
     echo "$D"
-    read -p "Your answer (A/B/C/D): " USER_ANSWER
+    read -r -p "Your answer (A/B/C/D): " USER_ANSWER
     USER_ANSWER=$(echo "$USER_ANSWER" | tr '[:lower:]' '[:upper:]')
     if [[ "$USER_ANSWER" == "$ANSWER" ]]; then
         echo "Correct!"
