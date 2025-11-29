@@ -3,3 +3,4 @@ tim &
 chief:
 goat 7
 chia score 2
+chia score 5

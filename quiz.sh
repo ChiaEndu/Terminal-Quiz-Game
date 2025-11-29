@@ -5,7 +5,7 @@ echo "welcome to quiz  game"
 read -r -p " what is your name?:" player_name
 name=$player_name
 
-echo "Hello, $player_name welcome to Quiz Game. let us begin"
+echo "Hello, $name welcome to Quiz Game. let us begin"
 echo
 
 QUESTION_FILE="questions.txt"
@@ -62,8 +62,8 @@ for idx in "${SHUFFLED[@]}"; do
     ask_question "$Q" "$A" "$B" "$C" "$D" "$ANSWER"
 done
 echo ""
-echo "$player_name you scored $score out of $TOTAL_QUESTIONS"
+echo "$name you scored $score out of $TOTAL_QUESTIONS"
 
 
-echo "$player_name score $score" >> highscore.txt
+echo "$name score $score" >> highscore.txt
 
