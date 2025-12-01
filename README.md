@@ -27,13 +27,13 @@ Run the quiz from your terminal:
 bash
 ./quiz.sh
 
-## Typical flow:
+## Typical flow
 
 1. The game greets the player and asks for a name (optional).
 2. Questions appear one at a time with choices A–D.
 3. Enter your answer (A, B, C, or D). Input is case-insensitive.
 4. The game shows whether the answer was correct and updates score/streak.
-5. At the end, the final score and statistics are shown, and the score may is saved to `highscores.txt` 
+5. At the end, the final score and statistics are shown, and the score may is saved to highscores.txt
 
 ## Question File Format (Detailed)
 
