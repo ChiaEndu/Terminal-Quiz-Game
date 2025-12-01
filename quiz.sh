@@ -22,7 +22,7 @@ while IFS= read -r line; do
     QUESTIONS+=("$line")
 done < "$QUESTION_FILE"
 # shuffle questions using shuf
-SHUFFLED=($(shuf -i 0-$((${#QUESTIONS[@]} - 1))))
+mapfile -t SHUFFLED < <(shuf -i 0-$((${#QUESTIONS[@]} - 1)))
 score=0
 streak=0
 TOTAL_QUESTIONS=${#QUESTIONS[@]}
