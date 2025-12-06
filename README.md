@@ -57,7 +57,7 @@ Have fun and good luck!
 
 * Built With
 Bash Script
-Unix Command Line Tools
+Unix Command-Line Tools
 Text File Parsing
 * Basic Game Logic
 Randomization (shuf)
@@ -72,14 +72,13 @@ Basic terminal commands
 ## Clone Project
 
 * To get a local copy up and running, follow the steps below:
-Clone this repository:
-https://github.com/ChiaEndu/Terminal-Quiz-Game.git
+Clone this repository:[https://github.com/ChiaEndu/Terminal-Quiz-Game.git]
 * Change directory into the project folder:
 cd terminal-Quiz-Game
-* Command Line Steps
-- git clone https://github.com/ChiaEndu/Terminal-Quiz-Game.git
+* Command-Line Steps
+- git clone [https://github.com/ChiaEndu/Terminal-Quiz-Game.git]
 - cd terminal-Quiz-game
- - git checkout main
+- git checkout main
 * Start App
 Run the following command to start the quiz:
 bash quiz.sh
