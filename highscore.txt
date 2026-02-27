@@ -1,9 +1,5 @@
-black 
-tim & 
-chief:
 goat 7
 chia score 2
 chia score 5
-chia score 8
 chu score 0
-d: 8
+red: 10

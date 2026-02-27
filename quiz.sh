@@ -7,6 +7,12 @@ name=$player_name
 
 echo "Hello, $name! Welcome to Quiz Game. Let us begin."
 echo
+echo "Select game mode:"
+echo "1) Normal Mode (score saved to leaderboard)"
+echo "2) Practice Mode (score NOT saved)"
+
+read -r -p "Enter 1 or 2: " MODE
+echo
 
 QUESTION_FILE="questions.txt"
 HIGHSCORE_FILE="highscore.txt"
@@ -93,4 +99,12 @@ for idx in "${SHUFFLED[@]}"; do
 done
 echo "$name, you scored $score out of $TOTAL_QUESTIONS."
 
-echo "$name: $score" >> "$HIGHSCORE_FILE"
+if [[ "$MODE" == "1" ]]; then
+    echo "$name: $score" >> "$HIGHSCORE_FILE"
+    echo "Your score has been saved to the leaderboard."
+else
+    echo "Practice mode: score not saved."
+fi
+
+echo "Leaderboard:"
+sort -t ':' -k2 -nr "$HIGHSCORE_FILE" | head -5
