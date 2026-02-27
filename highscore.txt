@@ -1,0 +1,5 @@
+goat 7
+chia score 2
+chia score 5
+chu score 0
+red: 10
